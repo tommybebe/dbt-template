@@ -11,10 +11,22 @@ models:
         description: dimension, true or false
       - name: metric1
         description: metric 1 
+        meta:
+          metrics:
+            metric_1_sum:
+              type: "sum"
       - name: metric2
         description: metric 2
+        meta:
+          metrics:
+            metric_2_sum:
+              type: "sum"
       - name: metric3
         description: metric 3
+        meta:
+          metrics:
+            metric_3_sum:
+              type: "sum"
 
   - name: my_second_dbt_model
     description: "A starter dbt model"
