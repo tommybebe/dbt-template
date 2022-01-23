@@ -12,7 +12,7 @@
 with source_data as (
 
     select 
-        date(current_date - i),
+        date(current_date - i) date,
         dim,
         rand() metric1,
         rand() metric2,
@@ -22,7 +22,7 @@ with source_data as (
         (
             select * from unnest([true, false]) dim
         )
-        
+
 )
 
 select *

@@ -5,11 +5,16 @@ models:
   - name: my_first_dbt_model
     description: "A starter dbt model"
     columns:
-      - name: id
-        description: "The primary key for this table"
-        tests:
-          - unique
-          - not_null
+      - name: date
+        description: date
+      - name: dim
+        description: dimension, true or false
+      - name: metric1
+        description: metric 1 
+      - name: metric2
+        description: metric 2
+      - name: metric3
+        description: metric 3
 
   - name: my_second_dbt_model
     description: "A starter dbt model"
